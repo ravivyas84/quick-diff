@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-diff-add: #d4edda;
+  --color-diff-add-dark: #1a4d2e;
+  --color-diff-delete: #f8d7da;
+  --color-diff-delete-dark: #4d1a1a;
+  --color-diff-modify: #fff3cd;
+  --color-diff-modify-dark: #4d3e00;
+  --color-diff-add-word: #28a74533;
+  --color-diff-add-word-dark: #28a74566;
+  --color-diff-delete-word: #dc354533;
+  --color-diff-delete-word-dark: #dc354566;
+}
+
+html {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.diff-scroll-sync::-webkit-scrollbar {
+  width: 8px;
+}
+
+.diff-scroll-sync::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.diff-scroll-sync::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: inherit !important;
+}
